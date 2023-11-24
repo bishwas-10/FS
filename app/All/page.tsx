@@ -19,6 +19,8 @@ const fetchAllProducts=async()=>{
 }
 
 export default function Store(){
+   const dispatch= useDispatch();
+
    const {isLoading, data}= useQuery<any[]>(
     {
         queryKey: ["all-products"],
@@ -29,7 +31,6 @@ export default function Store(){
    if(isLoading){
     return <Loading/>;
    }
-   const dispatch= useDispatch();
    return <div className="p-4 my-12 flex flex-wrap items-center justify-center gap-4">
         {data?.map((product:ProductsProps)=>{
             return <Link key={product.id} href={'/product/'+product.id}

@@ -13,6 +13,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 
 const Page = ({ params }: { params: { Id: number } }) => {
+  const dispatch = useDispatch();
+
   const [quantity, setQuantity] = useState<number>(1);
   const ID = params.Id;
   const fetchProductDetails = async (id: number) => {
@@ -102,7 +104,6 @@ const Page = ({ params }: { params: { Id: number } }) => {
     return stars;
   };
 
-  const dispatch = useDispatch();
 
   const addToCartHandler = () => {
     if (data && data.price) {
