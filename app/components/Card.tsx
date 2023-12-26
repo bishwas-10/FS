@@ -50,7 +50,7 @@ const Card = ({ product }: { product: ProductsProps }) => {
           fill
           src={product.image}
           alt={product.title}
-         className="p-4  object-contain"
+         className="p-4 z-0 object-contain"
           
         />
       </div>

@@ -71,7 +71,7 @@ const Cart = () => {
         </span>
       </div>
       {expanded && (
-        <div className="fixed left-0 top-0 z-10 h-screen  w-screen bg-gray-800 bg-opacity-80 transition-all text-black">
+        <div className="fixed left-0 top-0 z-20 h-screen  w-screen bg-gray-800 bg-opacity-80 transition-all text-black">
           <div className="p-2 h-screen absolute  right-4  w-[370px] bg-white ">
             <div className=" w-[350px] px-6 py-2 border-b-2 border-gray-400 flex flex-row justify-between">
               <p className="font-medium">Cart</p>

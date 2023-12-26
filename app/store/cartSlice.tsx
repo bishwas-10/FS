@@ -33,6 +33,7 @@ const cartSlice = createSlice({
       state.totalPrice=0
     },
     addToCart: (state: cartState, actions: PayloadAction<ICartData>) => {
+     
       const newItem = actions.payload;
       const existingItem = state.products.findIndex(
         (item) => item.id === newItem.id
