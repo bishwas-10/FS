@@ -3,10 +3,10 @@ import { useRouter, useSearchParams } from "next/navigation";
 import axios from "axios";
 import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
-import Card from "../components/Card";
-import { ProductsProps } from "../components/Card";
+import Card from "../_components/Card";
+import { ProductsProps } from "../_components/Card";
 import { ChevronRight } from "lucide-react";
-import Loading from "../components/Loading";
+import Loading from "../_components/Loading";
 const Page = ({ params }: { params: { Category: string } }) => {
   const CATEGORY = params.Category;
 

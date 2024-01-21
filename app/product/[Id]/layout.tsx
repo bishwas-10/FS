@@ -1,9 +1,9 @@
 
 import type { Metadata } from "next";
-import Navbar from "@/app/components/Navbar";
-import Subnavbar from "@/app/components/Subnavbar";
-import Footer from "@/app/components/Footer";
-import BackToTop from "@/app/components/BackToTop";
+import Navbar from "@/app/_components/Navbar";
+import Subnavbar from "@/app/_components/Subnavbar";
+import Footer from "@/app/_components/Footer";
+import BackToTop from "@/app/_components/BackToTop";
   const metadata: Metadata ={
     title: 'store'
   }

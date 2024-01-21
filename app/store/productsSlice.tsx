@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import { ProductsProps } from "../components/Card";
+import { ProductsProps } from "../_components/Card";
 
 export interface productState {
 selectedProduct: ProductsProps|null;

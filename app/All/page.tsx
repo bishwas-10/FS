@@ -2,14 +2,14 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import  Link from 'next/link';
-import Card from "../components/Card";
-import Subnavbar from "../components/Subnavbar";
-import { ProductsProps } from "../components/Card";
+import Card from "../_components/Card";
+import Subnavbar from "../_components/Subnavbar";
+import { ProductsProps } from "../_components/Card";
 import { setAllProducts, setSelectedProduct } from "../store/productsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
-import Loading from "../components/Loading";
+import Loading from "../_components/Loading";
 const fetchAllProducts=async()=>{
     
     const response= await axios.get('https://fakestoreapi.com/products');

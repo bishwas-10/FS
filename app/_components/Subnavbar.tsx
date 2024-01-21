@@ -25,38 +25,38 @@ const Subnavbar = () => {
   return (
     <div className=" relative flex items-center p-4 w-full h-12 bg-slate-800 text-white">
       <div className="w-content flex flex-row items-center justify-between">
-        <a
+        <Link
           onClick={() => setExpanded(!expanded)}
-         
+         href={"#"}
           className=" px-[6px] py-2 text-md flex items-center  font-bold tracking-wide cursor-pointer hover:border-white hover:border-2 duration-75 transition-all"
         >
           <IoMenu />
           All
-        </a>
-        <a
+        </Link>
+        <Link
           href="#"
           className="px-[6px] py-2 text-sm md:font-small hover:border-white hover:border-2 transition-all duration-75"
         >
           Today&apos;s Deal
-        </a>
-        <a
+        </Link>
+        <Link
           href="#"
           className="px-[6px] py-2 text-sm md:font-small hover:border-white hover:border-2 transition-all duration-75"
         >
           Customer Service
-        </a>
-        <a
+        </Link>
+        <Link
           href="#"
           className="px-[6px] py-2  text-sm md:font-small hover:border-white hover:border-2 transition-all  duration-75"
         >
           Sell
-        </a>
-        <a
+        </Link>
+        <Link
           href="#"
           className="px-[6px] py-2 text-sm  md:font-small hover:border-white hover:border-2 transition-all  duration-75 "
         >
           Gift Cards
-        </a>
+        </Link>
       </div>
       {expanded && (
         <div className="fixed left-0 top-0 z-20  w-screen bg-gray-800 bg-opacity-80 transition-all">
@@ -67,10 +67,10 @@ const Subnavbar = () => {
             />
             <div className="w-[370px] py-2 flex flex-row items-center justify-center gap-1 bg-slate-600 text-center">
               <UserCircle />
-              <a href="#" className=" text-xl ">
+              <Link href="#" className=" text-xl ">
                 {" "}
                 Hello! Sign In
-              </a>
+              </Link>
             </div>
             <div className="p-6  flex  flex-col h-full justify-between text-black">
               <div className="flex flex-col gap-4">
@@ -92,11 +92,11 @@ const Subnavbar = () => {
               </div>
               <div className="flex flex-col gap-3 mb-6 text-gray-600">
                 <p className="text-lg font-[600]">Help and Settings</p>
-                <a className="hover:text-gray-800"  href="#">Your Account</a>
-                <a className="hover:text-gray-800" href="#">© English</a>
+                <Link className="hover:text-gray-800"  href="#">Your Account</Link>
+                <Link className="hover:text-gray-800" href="#">© English</Link>
                 <p >United States</p>
-                <a className="hover:text-gray-800" href="#">Choose Language</a>
-                <a className="hover:text-gray-800" href="#">Sign In</a>
+                <Link className="hover:text-gray-800" href="#">Choose Language</Link>
+                <Link className="hover:text-gray-800" href="#">Sign In</Link>
               </div>
             </div>
           </div>

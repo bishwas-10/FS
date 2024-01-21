@@ -1,8 +1,7 @@
-
-import Navbar from "./components/Navbar"
-import Subnavbar from "./components/Subnavbar"
+import Navbar from "./_components/Navbar"
+import Subnavbar from "./_components/Subnavbar"
 import Link from "next/link"
-import CategoryHome from "./components/CategoryHome";
+import CategoryHome from "./_components/CategoryHome";
 import pic1 from './image/1.jpg';
 import pic2 from './image/2.jpg';
 import pic3 from './image/3.jpg';
@@ -15,9 +14,9 @@ import mens from './image/mens.jpg';
 import electronics from './image/Electronic.jpg';
 import jewellery from './image/jewell.jpg';
 import womens from './image/womens.jpg';
-import BackToTop from "./components/BackToTop";
-import Footer from "./components/Footer";
-import ImageSlider from "./components/ImageSlider";
+import BackToTop from "./_components/BackToTop";
+import Footer from "./_components/Footer";
+import ImageSlider from "./_components/ImageSlider";
 
 const IMAGES = [
   {url: pic1, alt: "pic 1"},
